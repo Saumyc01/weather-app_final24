@@ -56,7 +56,7 @@ function App() {
   }, [location]);
 
   return (
-    <div className="app">
+    <div className="weather-container">
       {console.log("all", currentData)}
       <CityDateDisplay data={currentData} />
       <WeatherCityDisplay data={currentData} />

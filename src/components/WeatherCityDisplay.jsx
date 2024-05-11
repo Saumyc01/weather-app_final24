@@ -19,7 +19,7 @@ function WeatherCityDisplay({ data }) {
       <div className="top">
         {data.main && (
           <div>
-            <h1>{data.main.temp.toFixed()}°F</h1>
+            <h1 className= "weather-heading">{data.main.temp.toFixed()}°F</h1>
             <p>{data.weather ? data.weather[0].main : null}</p>
             <p>
               Precipitation: {Math.min(100, precipitationPercentage.toFixed(2))}
